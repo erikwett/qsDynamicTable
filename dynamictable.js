@@ -43,12 +43,16 @@ define( ["jquery", "text!./dynamictable.css"], function ( $, cssContent ) {
 
 	function formatHeader ( col, value, sortorder ) {
 		var html =
-			'<th data-col="' + col + '">' + value.qFallbackTitle +
-			(value.qSortIndicator === 'A' ? "<i class='icon-triangle-top" : "<i class='icon-triangle-bottom");
-		if ( sortorder && sortorder[0] !== col ) {
-			html += " secondary";
+			'<th data-col="' + col + '">' + value.qFallbackTitle ;
+		//sort Ascending or Descending ?? add arrow
+		if(value.qSortIndicator === 'A' || value.qSortIndicator === 'D') {
+			html += (value.qSortIndicator === 'A' ? "<i class='icon-triangle-top" : "<i class='icon-triangle-bottom");
+			if ( sortorder && sortorder[0] !== col ) {
+				html += " secondary";
+			}
+			html += "'></i>";
 		}
-		html += "'></i></th>"
+		html += "</th>";
 		return html;
 	}
 
