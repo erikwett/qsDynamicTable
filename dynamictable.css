@@ -1,7 +1,8 @@
 .qv-object-dynamictable div.qv-object-content-container {
 	overflow: auto;
 }
-.qv-object-dynamictable td, th {
+.qv-object-dynamictable td,
+.qv-object-dynamictable th {
 	border-top: 0px solid #fff;
 	border-bottom: 1px solid #ddd;
 	border-right: 1px solid #ddd;
