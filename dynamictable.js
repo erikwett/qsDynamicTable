@@ -63,7 +63,7 @@ define( ["jquery", "text!./dynamictable.css"], function ( $, cssContent ) {
 				qDimensions: [],
 				qMeasures: [],
 				qInitialDataFetch: [{
-					qWidth: 10,
+					qWidth: 20,
 					qHeight: 50
 				}]
 			}
