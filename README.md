@@ -16,3 +16,6 @@ Also supports selections and simple paging.
 ![](qsDynamicTable1.png)
 
 ![](qsDynamicTable2.png)
+
+##Limitation
+Only supports 20 columns (previous version only 10)
