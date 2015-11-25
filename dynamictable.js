@@ -143,7 +143,7 @@ define( ["jquery", "text!./dynamictable.css"], function ( $, cssContent ) {
 				var requestPage = [{
 					qTop: lastrow + 1,
 					qLeft: 0,
-					qWidth: 10, //should be # of columns
+					qWidth: 20, //should be # of columns
 					qHeight: Math.min( 50, this.backendApi.getRowCount() - lastrow )
 				}];
 				$element.find( "#more" ).on( "qv-activate", function () {
